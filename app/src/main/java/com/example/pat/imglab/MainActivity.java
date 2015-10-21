@@ -49,13 +49,15 @@ public class MainActivity extends AppCompatActivity {
     public void getImg (View view){
         EditText et1;
         ImageView img;
+        String imgUrl;
 
         et1 = (EditText) findViewById(R.id.editTextImg);
         img = (ImageView) findViewById(R.id.image_area);
 
-        et1 =
+        imgUrl = et1.getText().toString();
 
-        img.setImageResource();
+        //fix setting image, or lack thereof
+        img.setImageResource(imgUrl);
 
     }
 }
