@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,8 +47,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void getImg (View view){
+        EditText et1;
         ImageView img;
+
+        et1 = (EditText) findViewById(R.id.editTextImg);
         img = (ImageView) findViewById(R.id.image_area);
+
+        et1 =
 
         img.setImageResource();
 
