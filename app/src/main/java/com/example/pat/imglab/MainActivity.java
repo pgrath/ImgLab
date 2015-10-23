@@ -50,14 +50,15 @@ public class MainActivity extends AppCompatActivity {
         EditText et1;
         ImageView img;
         String imgUrl;
+        ImageDownloader imgDl = new ImageDownloader();
 
         et1 = (EditText) findViewById(R.id.editTextImg);
         img = (ImageView) findViewById(R.id.image_area);
 
         imgUrl = et1.getText().toString();
 
-        //fix setting image, or lack thereof
-        img.setImageResource(imgUrl);
+        imgDl.download(imgUrl, img);
+
 
     }
 }
